@@ -2,9 +2,10 @@ service: stargazing
 
 provider:
   name: kubeless
-  runtime: nodejs6.10
-  environment:
-    WEBHOOK_URL: "https://hooks.slack.com/services/T0DMA.../..."
+  runtime: nodejs6
+
+plugins:
+  - serverless-kubeless
 
 functions:
   stargazers:
