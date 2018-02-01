@@ -10,4 +10,5 @@ functions:
   stargazers:
     handler: stargazers.handler
     events:
-      - http: POST stargazer
+      - http:
+          path: /stargazer
